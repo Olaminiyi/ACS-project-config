@@ -1,16 +1,16 @@
-# READ THESE FOLLOWING INSTRUCTION BEFORE COPYING THESE DATA
-# for wordpress data, we need to update the mount point to our file system by following the step below
-#  go to EFS > Access point > select wordpress >  View details > Attach 
-# copy efs mount helper without last efs part and paste it
-# before :/ /var/www/" on line 19
+- READ THESE FOLLOWING INSTRUCTION BEFORE COPYING THESE DATA
+- for wordpress data, we need to update the mount point to our file system by following the step below
+-  go to EFS > Access point > select wordpress >  View details > Attach 
+- copy efs mount helper without last efs part and paste it
+- before :/ /var/www/" on line 19
 #
-# we are creating healthstatus file (empty) so the loadbalancer will see our instance as healthy
-# we need to change our rds endpoint
-# go to rds > db instances
-# click on acs-database
-# copy the endpoint
-# paste it between "sed -i "s/localhost/.........../g" wp-config.php " on line 36
-# note that we have not created wordpressdb on line 39, but we are going to create it
+- we are creating healthstatus file (empty) so the loadbalancer will see our instance as healthy
+- we need to change our rds endpoint
+- go to rds > db instances
+- click on acs-database
+- copy the endpoint
+- paste it between "sed -i "s/localhost/.........../g" wp-config.php " on line 36
+- note that we have not created wordpressdb on line 39, but we are going to create it
 
 
 
