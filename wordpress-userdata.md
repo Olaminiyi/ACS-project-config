@@ -3,7 +3,7 @@
 -  go to EFS > Access point > select wordpress >  View details > Attach 
 - copy efs mount helper without last efs part and paste it
 - before :/ /var/www/" on line 19
-#
+- 
 - we are creating healthstatus file (empty) so the loadbalancer will see our instance as healthy
 - we need to change our rds endpoint
 - go to rds > db instances
