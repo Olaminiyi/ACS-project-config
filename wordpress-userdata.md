@@ -2,7 +2,7 @@
 # for wordpress data, we need to update the mount point to our file system by following the step below
 #  go to EFS > Access point > select wordpress >  View details > Attach 
 # copy efs mount helper without last efs part and paste it
-# between  "sudo mount -t efs -o tls, ..........  :/ /var/www/" on line 19
+# before :/ /var/www/" on line 19
 #
 # we are creating healthstatus file (empty) so the loadbalancer will see our instance as healthy
 # we need to change our rds endpoint
